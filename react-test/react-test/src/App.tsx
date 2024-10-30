@@ -79,6 +79,7 @@ export default function App() {
             border: "none",
             marginRight: "35px", 
             borderRadius: "7px",
+            backgroundColor: 'lightBlue',
             cursor: 'pointer'
           }}
         >
@@ -93,6 +94,7 @@ export default function App() {
             border: "none",
             marginRight: "35px", 
             borderRadius: "7px",
+            backgroundColor: 'lightBlue',
             cursor: 'pointer'
           }}
         >
@@ -107,6 +109,7 @@ export default function App() {
             border: "none",
             marginRight: "35px", 
             borderRadius: "7px",
+            backgroundColor: 'lightBlue',
             cursor: 'pointer'
           }}
         >
@@ -120,6 +123,7 @@ export default function App() {
             height: "30px",
             border: "none",
             borderRadius: "7px",
+            backgroundColor: 'lightBlue',
             cursor: 'pointer'
           }}
         >

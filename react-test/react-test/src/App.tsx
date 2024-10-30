@@ -56,6 +56,7 @@ export default function App() {
     setCategory(selectCategory);
   };
 
+
   useEffect(() => {
     handleGetBooks();
   }, []);
@@ -68,7 +69,7 @@ export default function App() {
     <div style={{ width: "100%" }}>
       <div
         className="search-box"
-        style={{ width: "400px", margin: "auto", marginTop: "10px"}}
+        style={{ width: "400px", margin: "auto", marginTop: "10px" }}
       >
         <button
           value="인문"
@@ -77,10 +78,10 @@ export default function App() {
             width: "70px",
             height: "30px",
             border: "none",
-            marginRight: "35px", 
+            marginRight: "35px",
             borderRadius: "7px",
-            backgroundColor: 'lightBlue',
-            cursor: 'pointer'
+            backgroundColor: "lightBlue",
+            cursor: "pointer",
           }}
         >
           인문
@@ -92,10 +93,10 @@ export default function App() {
             width: "70px",
             height: "30px",
             border: "none",
-            marginRight: "35px", 
+            marginRight: "35px",
             borderRadius: "7px",
-            backgroundColor: 'lightBlue',
-            cursor: 'pointer'
+            backgroundColor: "lightBlue",
+            cursor: "pointer",
           }}
         >
           사회
@@ -107,10 +108,10 @@ export default function App() {
             width: "70px",
             height: "30px",
             border: "none",
-            marginRight: "35px", 
+            marginRight: "35px",
             borderRadius: "7px",
-            backgroundColor: 'lightBlue',
-            cursor: 'pointer'
+            backgroundColor: "lightBlue",
+            cursor: "pointer",
           }}
         >
           과학기술
@@ -123,8 +124,8 @@ export default function App() {
             height: "30px",
             border: "none",
             borderRadius: "7px",
-            backgroundColor: 'lightBlue',
-            cursor: 'pointer'
+            backgroundColor: "lightBlue",
+            cursor: "pointer",
           }}
         >
           기타
@@ -143,10 +144,12 @@ export default function App() {
             alignItems: "center",
           }}
         >
-          <p>제목: {result.bookTitle}</p>
-          <p>저자: {result.bookAuthor}</p>
-          <p>출판년도: {result.bookPublicationYear}</p>
-          <p>카테고리: {result.category}</p>
+          <p style={{ fontSize: "18px" }}>제목: {result.bookTitle}</p>
+          <p style={{ fontSize: "14px" }}>저자: {result.bookAuthor}</p>
+          <p style={{ fontSize: "14px" }}>
+            출판년도: {result.bookPublicationYear}
+          </p>
+          <p style={{ fontSize: "14px" }}>카테고리: {result.category}</p>
         </div>
       ))}
     </div>
